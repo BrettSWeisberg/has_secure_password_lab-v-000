@@ -1,3 +1,5 @@
-<% form_for controller => :sessions, method="POST" method="create" %>
-<input type="text" name="name" value="name">
-<input type="text" name="password" value="password"
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+  <input name=name>
+  <input password=password
+  <input type=submit value='login'>
+<% end %>
